@@ -54,11 +54,22 @@ console.log(AgeVerification(21));
 // a function which takes another function as an input
 // and runs it after 1 sec
 function delayedCall(fn) {
-    // function returning nothing -- this is how we assign an empty function of any type
+    // function returning nothing -- this is how we assign an empty function of any type , void is the type of te function
     setTimeout(fn, 1000);
 }
 function log() {
     console.log("Function Calling Another Function After 1 Sec Was Succesfull");
 }
 delayedCall(log);
+//type of an object in typescript
+let user = {
+    firstName: "Aniket",
+    age: 21
+};
+//type of this object is {
+// firstname : String, 
+//. age : Number
+//.   
+function object(user) {
+}
 //# sourceMappingURL=index.js.map
