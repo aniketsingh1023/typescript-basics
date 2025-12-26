@@ -15,7 +15,31 @@ class Manager {
         this.firstname = firstname;
         this.lastname = lastname;
     }
-} //note : this can be done directly by objects and is done but classes provide some qualities and are used in some usecases like extends
+} //note : this can be done directly by objects and is done but classes provide some qualities and are used in some usecases
 let user = new Manager("Aniket", "Singh");
 console.log(user.firstname);
+//interview ques : difference between interfaces and types 
+// one major differnce is we can implement classes in interfaces
+// difference between abstract class and a interface
+// we can add default implementaton as well 
+//ex 
+class User {
+    name;
+    constructor(name) {
+        this.name = name;
+    }
+    hello() {
+        console.log("hi there"); // default implementation (key difference) between implenting an iterface and implementing an abstract class
+    }
+}
+class Employee extends User {
+    name;
+    constructor(name) {
+        super(name);
+        this.name = name;
+    }
+    greet() {
+        return "hi" + this.name; //implentation
+    }
+}
 //# sourceMappingURL=interface.js.map
