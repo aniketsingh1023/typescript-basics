@@ -1,5 +1,5 @@
 
-// function getMax(nums : number[]){
+// function getMax(nums : number[]){ // this is how a array is desfined 
 //     let maxValue = -10000;
 //     for (let i = 0 ; i < nums.length ; i++){
 //         if (nums[i] > maxValue){
