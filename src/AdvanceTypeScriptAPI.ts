@@ -83,3 +83,13 @@ console.log(users['abc123']); // Output: { id: 'abc123', name: 'John Doe' }
 const usersMap = new Map ()
 usersMap.set('abc123', { id: 'abc123', name: 'John Doe' })
 
+//Exclude
+//In a function that can accept several types of inputs but you want to exclude specific types from being passed to it.
+type Event = 'click' | 'scroll' | 'mousemove';
+type ExcludeEvent = Exclude<Event, 'scroll'>; // 'click' | 'mousemove'
+
+const handleEvent = (event: ExcludeEvent) => {
+  console.log(`Handling event: ${event}`);
+};
+
+handleEvent('click'); // OK
